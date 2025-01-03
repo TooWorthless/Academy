@@ -1,5 +1,6 @@
 import isObject from "./tasks/isObject.js";
 import parseInteger from "./tasks/parseInteger.js";
+import includes from "./tasks/includes.js";
 
 
 console.log(isObject(String("hvcsdjh")));
@@ -36,3 +37,18 @@ console.log('\n\n');
 NaN
 -123456789123456800000
 */ 
+
+console.log(includes("hello world", "world"));
+console.log(includes("hello world", "world", 6));
+console.log(includes("hello world", "world", 7));
+console.log(includes("helloworld", "world"));
+console.log(includes("helloworld", "i"));
+console.log('\n\n'); 
+
+/*
+true
+true
+false
+true
+false
+*/
