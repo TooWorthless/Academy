@@ -1,6 +1,7 @@
 import isObject from "./tasks/isObject.js";
 import parseInteger from "./tasks/parseInteger.js";
 import includes from "./tasks/includes.js";
+import parseFloat from "./tasks/parseFloat.js";
 
 
 console.log(isObject(String("hvcsdjh")));
@@ -51,4 +52,19 @@ true
 false
 true
 false
+*/
+
+console.log(parseFloat("123456.7"));
+console.log(parseFloat("123456.789123451.34.56"));
+console.log(parseFloat(".123456.78912.34.56"));
+console.log(parseFloat("-123.456sASDASD sdasdasd"));
+console.log(parseFloat("asdasdsaasd-123.456 sASDASD sdasdasd"));
+console.log('\n\n');
+
+/*
+123456.7
+123456.789123451
+0.123456
+-123.456
+NaN
 */
