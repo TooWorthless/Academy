@@ -2,14 +2,15 @@ import isObject from "./tasks/isObject.js";
 import parseInteger from "./tasks/parseInteger.js";
 import includes from "./tasks/includes.js";
 import parseFloat from "./tasks/parseFloat.js";
+import split from "./tasks/split.js";
 
 
 console.log(isObject(String("hvcsdjh")));
-console.log(isObject(new Set())); 
-console.log(isObject([])); 
-console.log(isObject(new Object())); 
-console.log(isObject({})); 
-console.log('\n\n'); 
+console.log(isObject(new Set()));
+console.log(isObject([]));
+console.log(isObject(new Object()));
+console.log(isObject({}));
+console.log('\n\n');
 
 /*
 false
@@ -20,14 +21,14 @@ true
 true
 */
 
-console.log(parseInteger("21")); 
+console.log(parseInteger("21"));
 console.log(parseInteger("-21"));
 console.log(parseInteger(" 21"));
 console.log(parseInteger("  -21"));
 console.log(parseInteger("2121ssdfsdfsdf asdasdasd"));
 console.log(parseInteger("sdfsdfsdf sdfsdf 228"));
 console.log(parseInteger("-123456789123456789122"));
-console.log('\n\n'); 
+console.log('\n\n');
 
 /*
 21
@@ -37,14 +38,14 @@ console.log('\n\n');
 2121
 NaN
 -123456789123456800000
-*/ 
+*/
 
 console.log(includes("hello world", "world"));
 console.log(includes("hello world", "world", 6));
 console.log(includes("hello world", "world", 7));
 console.log(includes("helloworld", "world"));
 console.log(includes("helloworld", "i"));
-console.log('\n\n'); 
+console.log('\n\n');
 
 /*
 true
@@ -67,4 +68,34 @@ console.log('\n\n');
 0.123456
 -123.456
 NaN
+*/
+
+/*
+console.log("a,b,c".split(","));
+console.log("hello world".split(" "));
+console.log("test".split("e"));
+console.log("123--456--789".split("--"));
+console.log("no-divider".split(","));
+console.log("ab##cd##ef".split("##"));
+console.log("aaaaaa".split("aa"));
+console.log("aaaabaaa".split("aaa"));  
+*/
+console.log(split("a,b,c", ","));
+console.log(split("hello world", " "));
+console.log(split("test", "e"));
+console.log(split("123--456--789", "---"));
+console.log(split("no-divider", ","));
+console.log(split("ab##cd##ef", "##"));
+console.log(split("aaaaaa", "aa"));
+console.log(split("aaaabaaa", "aaa"));
+
+/*
+[ 'a', 'b', 'c' ]
+[ 'hello', 'world' ]
+[ 't', 'st' ]
+[ '123', '456', '789' ]
+[ 'no-divider' ]
+[ 'ab', 'cd', 'ef' ]
+[ '', '', '', '' ]
+[ '', 'ab', '' ]
 */
