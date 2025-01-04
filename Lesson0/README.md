@@ -27,7 +27,7 @@
  * parseFloat("asdasdsaasd-123.456 sASDASD sdasdasd") - NaN
 
 
-# includes(text, matchStr, index = 0): boolean
+## includes(text, matchStr, index = 0): boolean
  * includes("hello world", "world") - true
  * includes("hello world", "world", 6) - true
  * includes("hello world", "world", 7) - false
@@ -35,7 +35,7 @@
  * includes("helloworld", "i") - false
 
 
-# split(text, divider): Array\<String\>
+## split(text, divider): Array\<String\>
  * split("a,b,c", ",") - [ 'a', 'b', 'c' ]
  * split("hello world", " ") - [ 'hello', 'world' ]
  * split("test", "e") - [ 't', 'st' ]
@@ -46,7 +46,7 @@
  * split("aaaabaaa", "aaa") - [ '', 'ab', '' ]
 
 
-# parseBalance(message): int | float
+## parseBalance(message): int | float
  * parseBalance('My wallet balance is 14960 USDT') - 14960
  * parseBalance('My wallet balance is 123456789.99 USD') - 123456789.99
  * parseBalance('My balance rest is 0.99 USDT') - 0.99
@@ -60,5 +60,5 @@
 
 { kate: 1000, dmitrty: 350, max: 600 }
  * countBalance1('Hello 500 <@Kate />, you did your work well and I sent you USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT') -
- 
+
 { dmitrty: 350, max: 600 }
