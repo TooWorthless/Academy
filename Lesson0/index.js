@@ -3,6 +3,7 @@ import parseInteger from "./tasks/parseInteger.js";
 import includes from "./tasks/includes.js";
 import parseFloat from "./tasks/parseFloat.js";
 import split from "./tasks/split.js";
+import parseBalance from "./tasks/parseBalance.js";
 
 
 console.log(isObject(String("hvcsdjh")));
@@ -88,6 +89,7 @@ console.log(split("no-divider", ","));
 console.log(split("ab##cd##ef", "##"));
 console.log(split("aaaaaa", "aa"));
 console.log(split("aaaabaaa", "aaa"));
+console.log('\n\n');
 
 /*
 [ 'a', 'b', 'c' ]
@@ -98,4 +100,17 @@ console.log(split("aaaabaaa", "aaa"));
 [ 'ab', 'cd', 'ef' ]
 [ '', '', '', '' ]
 [ '', 'ab', '' ]
+*/
+
+
+console.log(parseBalance('My wallet balance is 14960 USDT'));
+console.log(parseBalance('My wallet balance is 123456789.99 USD'));
+console.log(parseBalance('My balance rest is 0.99 USDT')); 
+console.log(parseBalance('dsfsdfdsf sdsdfsddf ssdf'));  
+
+/*
+14960
+123456789.99
+0.99
+NaN
 */
