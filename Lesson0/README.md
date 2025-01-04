@@ -51,3 +51,14 @@
  * parseBalance('My wallet balance is 123456789.99 USD') - 123456789.99
  * parseBalance('My balance rest is 0.99 USDT') - 0.99
  * parseBalance('dsfsdfdsf sdsdfsddf ssdf') - NaN
+
+## countBalance1(message): Object
+ * countBalance1('Hello <@Kate />, you did your work well and I sent you 1000 USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT') -
+
+{ kate: 1000, dmitrty: 350, max: 600 }
+ * countBalance1('Hello 500 <@Kate />, you did your work well and I sent you 1000 USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT') -
+
+{ kate: 1000, dmitrty: 350, max: 600 }
+ * countBalance1('Hello 500 <@Kate />, you did your work well and I sent you USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT') -
+ 
+{ dmitrty: 350, max: 600 }
