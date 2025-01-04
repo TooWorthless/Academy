@@ -35,7 +35,7 @@
  * includes("helloworld", "i") - false
 
 
-# split(text, divider): Array<String>
+# split(text, divider): Array\<String\>
  * split("a,b,c", ",") - [ 'a', 'b', 'c' ]
  * split("hello world", " ") - [ 'hello', 'world' ]
  * split("test", "e") - [ 't', 'st' ]
