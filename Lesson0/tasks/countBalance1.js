@@ -9,6 +9,13 @@ const charCodes = {
     nine: '9'.charCodeAt(0),
 };
 
+function toLowerCode(code) {
+    if (code >= 65 && code <= 90) {
+        code += 32;
+    }
+    return code;
+}
+
 export default function countBalance1(message) {
     const balances = {};
 
@@ -18,8 +25,8 @@ export default function countBalance1(message) {
     let isReadingAmount = false;
 
     for (let i = 0; i < message.length; i++) {
-        const char = message[i];
-        const code = char.charCodeAt(0);
+        const code = toLowerCode(message[i].charCodeAt(0));
+        const char = String.fromCharCode(code);
 
 
         if (code === charCodes.left && message[i + 1].charCodeAt(0) === charCodes.start) {
@@ -57,8 +64,8 @@ export default function countBalance1(message) {
                 isReadingAmount = false;
 
                 if(currentName === '') continue;
-                const normalized = currentName.toLowerCase();
-                balances[normalized] = (balances[normalized] || 0) + currentAmount;
+        
+                balances[currentName] = (balances[currentName] || 0) + currentAmount;
             }
         }
     }

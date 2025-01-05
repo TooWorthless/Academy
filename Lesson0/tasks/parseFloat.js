@@ -40,13 +40,6 @@ export default function parseFloat(str) {
             const digit = code - charCodes.zero;
 
             if (isFraction) {
-                // fractionDivider *= 10;
-                // console.log("code", (code - charCodes.zero))
-                // console.log("fractionDivider", fractionDivider)
-                // console.log("code / fractionDivider", (code - charCodes.zero) / fractionDivider)
-                // console.log("result", result)
-                // console.log("result+=", result+((code - charCodes.zero) / fractionDivider))
-                // result += (code - charCodes.zero) / (fractionDivider *= 10);
                 fractionResult = fractionResult * 10 + digit;
                 fractionMultiplier *= 10;
             } else {
