@@ -5,6 +5,7 @@ import parseFloat from "./tasks/parseFloat.js";
 import split from "./tasks/split.js";
 import parseBalance from "./tasks/parseBalance.js";
 import countBalance1 from "./tasks/countBalance1.js";
+import countEmoji from "./tasks/countEmoji.js";
 
 
 console.log(isObject(String("hvcsdjh")));
@@ -107,6 +108,7 @@ console.log(parseBalance('My wallet balance is 14960 USDT'));
 console.log(parseBalance('My wallet balance is 123456789.99 USD'));
 console.log(parseBalance('My balance rest is 0.99 USDT')); 
 console.log(parseBalance('dsfsdfdsf sdsdfsddf ssdf'));  
+console.log('\n\n');
 /*
 14960
 123456789.99
@@ -118,8 +120,40 @@ NaN
 console.log(countBalance1('Hello <@Kate />, you did your work well and I sent you 1000 USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT'));
 console.log(countBalance1('Hello 500 <@Kate />, you did your work well and I sent you 1000 USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT'));
 console.log(countBalance1('Hello 500 <@Kate />, you did your work well and I sent you USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT'));
+console.log('\n\n');
 /*
 { kate: 1000, dmitrty: 350, max: 600 }
 { kate: 1000, dmitrty: 350, max: 600 }
 { dmitrty: 350, max: 600 }
 */
+
+
+const case1 = '<@Kate />:apple: <@Max/>:like:<@alisa /> :like: received:apple::apple:';
+const case2 = '<@Kate />:apple: <@Max/>:apple: :APPLE: :AppLe:<@alisa /> :like: received:apple::apple:';
+const case3 = '<@Kate />:apple: <@Max/>:apple APPLE: AppLe:<@alisa /> :like: received:apple::apple:';
+const case4 = '<@Kate />:apple: <@Max/>:like:<@alisa /> :like: received:apple::apple: <@kate /> alsdaksdjhsa <@KATE /> :apple: :apple:';
+const case5 = '<@Kate />:apple: <@Max/><@olia/><@misha/><@dasha/><@alisa /> :like: received:apple::apple:  <@dima/><@vasia/><@gena/><@ihor/><@tolik />';
+const case6 = ':apple: :apple: <@Kate />:apple: <@Max/><@alisa /> :like: received:apple::apple:';
+
+console.log(countEmoji(case1, 'apple')); 
+console.log(countEmoji(case2, 'apple')); 
+console.log(countEmoji(case3, 'apple')); 
+console.log(countEmoji(case4, 'apple')); 
+console.log(countEmoji(case5, 'apple')); 
+console.log(countEmoji(case6, 'apple')); 
+
+// { kate: 1, max: 2, alisa: 2 }
+// { kate: 1, max: 3, alisa: 2 }
+// { kate: 1, max: 2, alisa: 2 }
+// { kate: 5, max: 2, alisa: 2 }
+// { kate: 1, max: 2, olia: 2, misha: 2, dasha: 2, alisa: 2, dima: 0, vasia: 0, gena: 0, ihor: 0, tolik: 0 }
+// { kate: 1, max: 2, alisa: 2 }
+
+
+
+
+
+
+
+
+
