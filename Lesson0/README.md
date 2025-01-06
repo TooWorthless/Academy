@@ -74,7 +74,7 @@
  * countEmoji(case6, 'apple') - { kate: 1, max: 2, alisa: 2 }
 
 
- ## countBalance2,3(message, emoji): int | float
+ ## countBalance2,3(reverse)(message): int | float
  * countBalance2,3("My wallet balance is 14690 USDT. I paid 750 USDT for plane tickets and 921 USDT for a flat") - 13019
  * countBalance2,3("I paid 750 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 14690 USDT.") - 13019
  * countBalance2,3("I paid 750.502 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 1469023.123124 USDT.") - 1467351.6211239998
