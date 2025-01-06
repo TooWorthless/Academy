@@ -5,6 +5,8 @@ import parseFloat from "./tasks/parseFloat.js";
 import split from "./tasks/split.js";
 import parseBalance from "./tasks/parseBalance.js";
 import countBalance1 from "./tasks/countBalance1.js";
+import countBalance2 from "./tasks/countBalance2.js";
+import countBalance3 from "./tasks/countBalance3.js";
 import countEmoji from "./tasks/countEmoji.js";
 
 
@@ -141,6 +143,7 @@ console.log(countEmoji(case3, 'apple'));
 console.log(countEmoji(case4, 'apple')); 
 console.log(countEmoji(case5, 'apple')); 
 console.log(countEmoji(case6, 'apple')); 
+console.log('\n\n');
 
 // { kate: 1, max: 2, alisa: 2 }
 // { kate: 1, max: 3, alisa: 2 }
@@ -150,9 +153,21 @@ console.log(countEmoji(case6, 'apple'));
 // { kate: 1, max: 2, alisa: 2 }
 
 
+console.log(countBalance2("My wallet balance is 14690 USDT. I paid 750 USDT for plane tickets and 921 USDT for a flat"));
+console.log(countBalance2("I paid 750 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 14690 USDT."));
+console.log(countBalance2("I paid 750.502 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 1469023.123124 USDT."));
+console.log('\n\n');
+// 13019
+// 13019
+// 1467351.6211239998
 
-
-
+console.log(countBalance3("My wallet balance is 14690 USDT. I paid 750 USDT for plane tickets and 921 USDT for a flat"));
+console.log(countBalance3("I paid 750 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 14690 USDT."));
+console.log(countBalance3("I paid 750.502 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 1469023.123124 USDT."));
+console.log('\n\n');
+// 13019
+// 13019
+// 1467351.6211239998
 
 
 

@@ -52,6 +52,7 @@
  * parseBalance('My balance rest is 0.99 USDT') - 0.99
  * parseBalance('dsfsdfdsf sdsdfsddf ssdf') - NaN
 
+
 ## countBalance1(message): Object
  * countBalance1('Hello <@Kate />, you did your work well and I sent you 1000 USDT. <@Dmitrty /> was working at the weekend so I sent you 350 USDT. <@Max /> won 600 USDT') -
 
@@ -64,7 +65,6 @@
 { dmitrty: 350, max: 600 }
 
 
-
 ## countEmoji(message, emoji): Object
  * countEmoji(case1, 'apple') - { kate: 1, max: 2, alisa: 2 }
  * countEmoji(case2, 'apple') - { kate: 1, max: 3, alisa: 2 }
@@ -72,3 +72,9 @@
  * countEmoji(case4, 'apple') - { kate: 5, max: 2, alisa: 2 }
  * countEmoji(case5, 'apple') - { kate: 1, max: 2, olia: 2, misha: 2, dasha: 2, alisa: 2, dima: 0, vasia: 0, gena: 0, ihor: 0, tolik: 0 }
  * countEmoji(case6, 'apple') - { kate: 1, max: 2, alisa: 2 }
+
+
+ ## countBalance2,3(message, emoji): int | float
+ * countBalance2,3("My wallet balance is 14690 USDT. I paid 750 USDT for plane tickets and 921 USDT for a flat") - 13019
+ * countBalance2,3("I paid 750 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 14690 USDT.") - 13019
+ * countBalance2,3("I paid 750.502 USDT for plane tickets and 921 USDT for a flat. My wallet balance is 1469023.123124 USDT.") - 1467351.6211239998
