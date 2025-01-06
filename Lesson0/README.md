@@ -75,7 +75,6 @@
 
 \
 \
-\
 // count balance 3 - reverse
  ## countBalance2,3(message): int | float
  * countBalance2,3("My wallet balance is 14690 USDT. I paid 750 USDT for plane tickets and 921 USDT for a flat") - 13019
