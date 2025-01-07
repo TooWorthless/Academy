@@ -110,6 +110,7 @@ console.log(parseBalance('My wallet balance is 14960 USDT'));
 console.log(parseBalance('My wallet balance is 123456789.99 USD'));
 console.log(parseBalance('My balance rest is 0.99 USDT')); 
 console.log(parseBalance('dsfsdfdsf sdsdfsddf ssdf'));  
+console.log(parseBalance('Hello team, I checked my wallet balance, there is 0,0000341 USDT, I can not buy anything'));  
 console.log('\n\n');
 /*
 14960
