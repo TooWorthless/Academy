@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Visualization</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f4f6;
+    }
+
+    .timeline {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      background-color: #d1fae5;
+      border-radius: 25px;
+      width: 100%;
+      max-width: 800px;
+      position: relative;
+      padding: 0 10px;
+    }
+
+    .circle {
+      height: 24px;
+      width: 24px;
+      background-color: #10b981;
+      border-radius: 50%;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline" id="timeline"></div>
+
+  <script>
+    const data = [
+      { "from": "2023-05-30T05:56:28+00:00", "to": "2023-05-30T05:57:10+00:00" },
+      { "from": "2023-05-30T06:01:01+00:00", "to": "2023-05-30T06:49:31+00:00" },
+      { "from": "2023-05-30T07:04:21+00:00", "to": "2023-05-30T07:05:26+00:00" },
+      { "from": "2023-05-30T08:27:42+00:00", "to": "2023-05-30T08:28:52+00:00" },
+      { "from": "2023-05-30T08:29:43+00:00", "to": "2023-05-30T08:31:28+00:00" },
+      { "from": "2023-05-30T10:19:15+00:00", "to": "2023-05-30T10:21:02+00:00" },
+      { "from": "2023-05-30T16:50:26+00:00", "to": "2023-05-30T16:50:49+00:00" },
+      { "from": "2023-05-30T17:03:12+00:00", "to": "2023-05-30T17:04:24+00:00" },
+      { "from": "2023-05-30T17:05:11+00:00", "to": "2023-05-30T17:05:55+00:00" },
+      { "from": "2023-05-30T19:29:46+00:00", "to": "2023-05-30T19:31:04+00:00" },
+      { "from": "2023-05-30T20:42:28+00:00", "to": "2023-05-30T20:43:31+00:00" },
+      { "from": "2023-05-30T22:43:31+00:00", "to": "2023-05-30T23:43:31+00:00" }
+    ];
+
+    const timeline = document.getElementById('timeline');
+    const dayStart = new Date('2023-05-30T00:00:00+00:00');
+    const dayEnd = new Date('2023-05-30T23:59:59+00:00');
+    const dayDuration = dayEnd - dayStart;
+
+    const MIN_CIRCLE_WIDTH = 24;
+    const MIN_GAP_WIDTH = 5;
+
+    data.forEach((entry, index) => {
+      const fromTime = new Date(entry.from);
+      const toTime = new Date(entry.to);
+      const prevToTime = index > 0 ? new Date(data[index - 1].to) : null;
+
+      const startPercent = ((fromTime - dayStart) / dayDuration) * 100;
+      const endPercent = ((toTime - dayStart) / dayDuration) * 100;
+
+      const circle = document.createElement('div');
+      circle.className = 'circle';
+      circle.style.left = `calc(${startPercent}% - 12px)`;
+
+      if (
+        prevToTime &&
+        (fromTime - prevToTime) / 1000 / 60 <= 15
+      ) {
+        circle.style.left = `calc(${startPercent}% - 12px)`;
+      }
+
+      timeline.appendChild(circle);
+    });
+  </script>
+</body>
+</html>
