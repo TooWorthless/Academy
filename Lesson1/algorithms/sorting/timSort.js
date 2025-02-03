@@ -58,7 +58,6 @@ export default function timSort(array) {
     const RUN = 32;
     const n = array.length;
 
-    // Sorting the partitions using Insertion Sort
     for (let i = 0; i < n; i += RUN) {
         insertionSort(array, i, Math.min(i + RUN - 1, n - 1));
     }

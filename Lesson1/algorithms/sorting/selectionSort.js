@@ -2,7 +2,7 @@ export default function selectionSort(array) {
     let iterations = 0;
 
     for (let iterIndex = 0; iterIndex < array.length; iterIndex++) {
-        console.log('for iteration ', iterIndex);
+        // console.log('for iteration ', iterIndex);
         iterations++;
 
 
@@ -20,7 +20,7 @@ export default function selectionSort(array) {
         [array[iterIndex], array[minIndex]] = [array[minIndex], array[iterIndex]];
     }
 
-    console.log('iterations :>> ', iterations);
+    // console.log('iterations :>> ', iterations);
 
     return array;
 };

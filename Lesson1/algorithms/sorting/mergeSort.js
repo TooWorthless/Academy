@@ -7,7 +7,6 @@ export default function mergeSort(array) {
 
     function ms(left, right) {
 
-        // if(calls > 5) return;
         calls++;
         // console.log('calls :>> ', calls);
 
