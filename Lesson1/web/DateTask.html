@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index3</title>
+    <title>DateTask</title>
     <style>
         * {
             margin: 0;
@@ -39,6 +39,7 @@
             background-color: #10b981;
             border-radius: 50%;
             box-sizing: border-box;
+
             /* border: 0.3px solid darkgreen; */
         }
 
@@ -70,7 +71,6 @@
 
     <script>
         const data = [
-            // { from: "2023-05-30T01:00:00+00:00", to: "2023-05-30T02:57:10+00:00" },
             { from: "2023-05-30T05:56:28+00:00", to: "2023-05-30T05:57:10+00:00" },
             { from: "2023-05-30T06:01:01+00:00", to: "2023-05-30T06:49:31+00:00" },
             { from: "2023-05-30T07:04:21+00:00", to: "2023-05-30T07:05:26+00:00" },
@@ -87,13 +87,6 @@
         const timeline = document.getElementById('timeline');
 
         const timelinePxWidth = timeline.offsetWidth;
-
-        const _12px = ((12 * 100) / timelinePxWidth) / 100;
-        const _24px = ((24 * 600) / timelinePxWidth) / 100;
-
-        console.log('_24px :>> ', _24px);
-
-        // timeline.style.paddingRight = `${_24px}%`;
 
 
         const startOfDay = new Date("2023-05-30T00:00:00+00:00").getTime();
@@ -113,8 +106,6 @@
 
             const fromPercent = ((from - startOfDay) / totalDuration);
             const toPercent = (to - startOfDay) / totalDuration;
-            // const fromPercent = ((from - startOfDay) / totalDuration) - _24px;
-            // const toPercent = (to - startOfDay) / totalDuration - _24px;
             console.log(fromPercent, toPercent);
 
             const circleElement = document.createElement('div');
@@ -125,7 +116,6 @@
             const spaceElement = document.createElement('div');
             spaceElement.className = 'space';
             spaceElement.style.width = `${spaceWidth * 100}%`;
-            // spaceElement.appendChild(circleElement);
             timeline.appendChild(spaceElement);
             result += spaceWidth * 100;
 

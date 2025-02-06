@@ -17,7 +17,6 @@ export default function parseFloat(str) {
     let fractionMultiplier  = 1; 
 
     for (let i = 0; i < str.length; i++) {
-        // console.log(result);
         const char = str[i];
         const code = char.charCodeAt(0);
 

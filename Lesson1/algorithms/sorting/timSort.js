@@ -12,8 +12,6 @@ function insertionSort(array, left, right) {
         array[j + 1] = elem;
     }
 
-    // console.log('iterations :>> ', iterations);
-
     return array;
 };
 
@@ -48,8 +46,6 @@ function merge(array, left, middle, right) {
         j++;
         k++;
     }
-
-    // console.log('array :>> ', array);
 }
 
 

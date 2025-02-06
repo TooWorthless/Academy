@@ -14,8 +14,6 @@ export default function stringify(obj) {
 
     while (keyIndex <= keys.length) {
 
-        // console.log('stack :>> ', stack);
-
         if (!stack.length) {
             if(keyIndex>=keys.length) break;
             if (keyIndex !== keys.length - 1) {
@@ -29,7 +27,7 @@ export default function stringify(obj) {
                 isArray: firstIsArray,
                 key: firstIsArray ? null : keys[keyIndex]
             });
-            // console.log('stack :>> ', stack);
+
             keyIndex++;
         }
 

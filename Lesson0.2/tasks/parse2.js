@@ -55,8 +55,6 @@ export default function parse2(json) {
     }
 
     while (index < json.length - 1) {
-        // console.log('char :>> ', char);
-        // console.log('stack :>> ', stack);
         if (isWhitespace()) {
             updateIndex();
             continue;
@@ -86,11 +84,6 @@ export default function parse2(json) {
         }
 
         const context = stack[stack.length - 1];
-        // console.log('stack.length :>> ', stack.length);
-        // console.log('stack[stack.length-1] :>> ', stack[stack.length-1]);
-        // console.log('context :>> ', context);
-        // console.log('context.stage :>> ', context.stage);
-        // console.log('context.type :>> ', context.type);
 
         switch (context.stage) {
             case 'key':

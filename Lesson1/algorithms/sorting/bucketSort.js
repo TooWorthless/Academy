@@ -15,10 +15,8 @@ export default function bucketSort(array) {
         () => []
     );
 
-    // console.log('buckets :>> ', buckets);
     for(const current of array) {
         buckets[Math.floor( (current - min) / size )].push(current);
-        // console.log('buckets :>> ', buckets);
     }
 
     array.length = 0;

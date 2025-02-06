@@ -15,7 +15,6 @@ import randomNumber from './util/randomNumber.js';
 
 import fs from 'fs';
 
-
 // let array = [];
 // for(let i = 0; i < randomNumber(8, 11); i++) {
 //     array[array.length] = randomNumber(0, 40);

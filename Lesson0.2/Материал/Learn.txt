@@ -1,0 +1,122 @@
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+🧩 Дізнатись:
+
+1) Як створений array under the hood? (шукаємо сорси javascript і читаємо їх алгоритми)
+
+2) Як створений Set, Map under the hood? На базі якого алгоритму вони працюють? 
+Як створити свій власний подібний алгоритм?
+Яка глобальна різниця між object, array та set і  map?
+
+3) Що таке Garbage collecor? Як він працює? Як часто запускається? 
+Скільки пам'яті і процесор коду викорисовує garbage collector? 
+Що буде якщо вимкнути Garbage Collector? 
+
+4) Навіщо існують WeakMap, WeakSet, WeakRef? Яка їх ключова роль? 
+Де їх використовувати?
+
+5) Які типи данних автоматично сортуються? 
+Які типи данних зберігають дані в порядку надходження?
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+🧩 Завдання:
+ - Вивчити всі методи розділів Object, Array, Date, Intl
+ - Завчити які аргументи приймає кожен метод
+ - Здобути інформацію де використовується кожен метод і для чого, приклади використання
+ - Застосувати на практиці кожен метод з розділів Object / Array / Date / Intl
+ - Спробувати зламати кожен метод передаючі інвалідні аргументи різного типу
+
+1) Object
+ - create
+ - assign
+ - keys
+ - values
+ - entries
+ - seal
+ - isSealed
+ - freeze
+ - fromEntries
+ - is
+ - isFrozen
+ - preventExtensions
+ - set
+ - map
+ - weekSet
+ - weekMap
+ - WeakRef
+ - symbol
+
+2) Array
+ - new Array, []
+ - of
+ - from
+ - at
+ - concat
+ - every
+ - fill
+ - filter
+ - some
+ - find
+ - findIndex
+ - flat
+ - forEach
+ - map
+ - reduce
+ - reduceRight
+ - includes
+ - indexOf
+ - isArray
+ - join
+ - lastIndexOf
+ - reverse
+ - pop
+ - push
+ - shift
+ - unshift
+ - slice
+ - splice
+ - sort
+ - toString
+ - values
+ - entries
+ - keys
+ - toReversed
+ - toSorted
+ - toSpliced
+ - with
+
+3) Date
+ - new Date()
+ - Date.now
+ - Date.parse
+ - .getFullYear
+ - .getDate
+ - .getDay
+ - .getYear
+ - .getMonth
+ - .getHours
+ - .getMinutes
+ - .getSeconds
+ - .getMilliseconds
+ - .getTime
+ - .setDate
+ - .setFullYear
+ - .setMonth
+ - .setHours
+ - .setMinutes
+ - .setSeconds
+ - .setMilliseconds
+ - .setTime
+ - .toJSON
+ - .toString
+ - .toTimeString
+ - .toUTCString
+
+4) Intl
+ - .DateTimeFormat	
+ - .ListFormat	
+ - .NumberFormat	
+ - .RelativeTimeFormat	
+ - .Collator
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+

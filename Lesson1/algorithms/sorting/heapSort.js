@@ -52,6 +52,3 @@ export default function heapSort(array) {
     }
     return array;
 }
-
-
-// [35, 6, 35, 11, 3, 0, 38, 17, 1]

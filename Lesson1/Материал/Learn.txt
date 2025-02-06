@@ -1,0 +1,44 @@
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+🧩 Вивчити як працює binarySearch
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+🧩 Вивчити як працює сортування
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+- Heap Sort
+- Shell Sort
+- Bucket Sort
+- Counting Sort
+- Radix Sort
+- Tim Sort
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+🧩 Вивчити як працюють алгоритми балансування данних 
+- Least Connection
+- Weighted Round Robin
+- Weighted Least Connections
+- Least Response Time
+- Least Time Remaining
+- IP Hash
+- URL Hash
+- Consistent Hashing
+- Random with Retry
+- Fastest Response Time
+- Slowest Response Time
+- Chained Failover
+- Ant Colony Optimization
+- DNS-based Load Balancing
+- Locality-Based Load Balancing
+- Priority-based Load Balancing
+- Resource-based Load Balancing
+- Throttle-based Load Balancing
+- (GSLB) Global Server Load Balancing
+- Least Recently Used (LRU) Load Balancing
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
