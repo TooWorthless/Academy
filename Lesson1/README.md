@@ -1,34 +1,12 @@
-# Результат виконання завдань
+# Урок 0.2
 
-## Розроблені методи сортування
-* Bubble Sort
-* Selection Sort
-* Insertion Sort
-* Merge Sort
-* Quick Sort
-* Heap Sort
-* Shell Sort
-* Bucket Sort
-* Counting Sort
-* Radix Sort
-* Tim Sort
+## Матеріал
+ - [До вивчення](/Lesson1/Материал/Learn.txt)
+ - [Завдання](/Lesson1/Материал/Tasks.txt)
 
-## Розроблені методи балансування
-*  Least Connection
-*  Weighted Round Robin
-*  Weighted Least Connections
-*  Least Response Time
-*  Least Time Remaining
-*  IP Hash
-*  URL Hash
-*  Consistent Hashing
-*  Random with Retry
-*  Fastest Response Time
-*  Slowest Response Time
-*  Chained Failover
-*  Locality-Based Load Balancing
-*  Throttle-based Load Balancing
-*  Least Recently Used (LRU) Load Balancing
+## Документація
+ - [Balancing Methods](/Lesson1/docs/balancing.txt)
 
-## Виконано завдання верстки
-* Результат за шляхом "/web/DateTask.html"
+## Виконані завдання
+ - [Результат](/Lesson1/algorithms/README.md)
+
