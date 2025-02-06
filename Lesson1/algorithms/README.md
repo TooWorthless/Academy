@@ -1,6 +1,12 @@
 # Результат виконання завдань
 
-## Розроблені методи сортування
+## [Розроблені методи пошуку](/Lesson1/algorithms/search)
+
+* Binary
+* Binary Recursive
+
+## [Розроблені методи сортування](/Lesson1/algorithms/sorting)
+
 * Bubble Sort
 * Selection Sort
 * Insertion Sort
@@ -13,22 +19,28 @@
 * Radix Sort
 * Tim Sort
 
-## Розроблені методи балансування
-*  Least Connection
-*  Weighted Round Robin
-*  Weighted Least Connections
-*  Least Response Time
-*  Least Time Remaining
-*  IP Hash
-*  URL Hash
-*  Consistent Hashing
-*  Random with Retry
-*  Fastest Response Time
-*  Slowest Response Time
-*  Chained Failover
-*  Locality-Based Load Balancing
-*  Throttle-based Load Balancing
-*  Least Recently Used (LRU) Load Balancing
+## [Розроблені методи балансування](/Lesson1/algorithms/balance)
+
+* Least Connection
+* Weighted Round Robin
+* Weighted Least Connections
+* Least Response Time
+* Least Time Remaining
+* IP Hash
+* URL Hash
+* Consistent Hashing
+* Random with Retry
+* Fastest Response Time
+* Slowest Response Time
+* Chained Failover
+* Locality-Based Load Balancing
+* Throttle-based Load Balancing
+* Least Recently Used (LRU) Load Balancing
 
 ## Виконано завдання верстки
-* Результат за шляхом "/web/DateTask.html"
+
+* [Результат](/Lesson1/web/DateTask.html)
+
+## На головну
+
+* [Academy](/)
