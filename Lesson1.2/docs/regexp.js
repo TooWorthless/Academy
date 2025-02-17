@@ -47,3 +47,13 @@
     // y - Поиск с привязкой к позиции в строке
 }
 
+{
+    // Именование группы
+    const text = "Дата 1: 2024-02-16; Дата 2: 2023-04-15";
+    const regex = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/;
+    const match = text.match(regex);
+ 
+    console.log(match.groups);  
+    // { year: "2024", month: "02", day: "16" }
+}
+

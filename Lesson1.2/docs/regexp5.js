@@ -8,7 +8,7 @@ const regexp = new MyRegExp(text);
 // search all phone numbers
 // regexp.match(/\+[0-9]{2}(?=\s)\([0-9]{3}\)\s[0-9\s](?=\s)/ig);
 // {10, 16}
-regexp.match(/(\+?)[0-9]{2}(\s?)(\(?)[0-9]{3}(\)?)(\s?)[0-9\-]+/ig);
+regexp.match(/\b(\+?)[0-9]{2}(\s?)(\(?)[0-9]{3}(\)?)(\s?)[0-9\-]+\b/ig);
 regexp.match(/(\+?)\d+[\d\-\(\)\s]{10,16}/ig);
 // 
 
