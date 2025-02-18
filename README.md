@@ -5,3 +5,5 @@
 ## [Lesson 0.2](/Lesson0.2/README.md)
 
 ## [Lesson 1](/Lesson1/README.md)
+
+## [Lesson 1.2](/Lesson1.2/README.md)
