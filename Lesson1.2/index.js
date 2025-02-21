@@ -226,3 +226,4 @@ console.log('\nSplit2');
 console.log(split2(text, 'example'));
 console.log(split2(text, '.'));
 console.log();
+
